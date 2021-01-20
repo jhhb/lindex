@@ -1,0 +1,31 @@
+* [2021-01-20 Wed]
+
+Features:
+- Start by ingesting the output of the below from the kill ring,
+  keeping in mind that the package should be able to work on any link
+  input that has the same data structure.
+  - configurable
+    - the link type
+
+#+begin_src emacs-lisp
+  (org-eww-copy-for-org-mode)
+#+end_src
+
+- apply a transformation to each car / unit / whatever the
+data structure is output
+  - configurable
+    - transformation type
+
+  - upsert the link into an index file as a headline, updating metadata
+  properties.
+
+    - not configurable yet
+
+    - use the link :id: prop
+
+    - allow searching for the indexed links, and ways of easily
+  inserting / referring to them from other files
+
+- ways of cleaning up links in other files
+
+
